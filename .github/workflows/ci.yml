@@ -17,6 +17,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          
+      - name: runs tests
+        run: npm run test
 
-      - name: run node
-        run: node --version
+      - name: Install dependencies
+        run: npm ci
