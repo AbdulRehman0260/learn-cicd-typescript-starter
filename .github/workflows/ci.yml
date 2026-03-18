@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  
+
   tests:
     name: Tests
     runs-on: ubuntu-latest
@@ -42,4 +42,4 @@ jobs:
         run: npm ci
 
       - name: runs style checks
-        run: npm run fornat:check
+        run: npm run format:check
